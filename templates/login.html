@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+ 
+{% block body %}
+{{ super() }}
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %} 
+<form action="{{ url_for('login') }}" method="post">
+	{{ form.csrf_token }}
+<p>
+	    {{ form.email.label() }}
+	    {{ form.email() }}
+	    {% if form.email.errors %}
+		{% for error in form.email.errors %}
+		    {{ error }}
+		{% endfor %}
+	    {% endif %}
+	</p>
+       
+       
+	<p>
+	    {{ form.password.label() }}
+	    {{ form.password() }}
+	    {% if form.password.errors %}
+		{% for error in form.password.errors %}
+		    {{ error }}
+		{% endfor %}
+	    {% endif %}
+	</p>
+<p>
+	    {{ form.remember.label() }}
+	    {{ form.remember() }}
+	</p>
+<input type="submit" value="Войти" />
+<hr align=left width="300px">
+<a href="{{url_for('register')}}">Регистрация</a>
+</form>
+{% endblock %}
