@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@localhost" uuid="529ea099-3933-47e1-ad79-dc69a08487df">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="flask_app_db" uuid="a3e5867f-dd41-4cce-9dcb-4c6e041cc660">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\и\Desktop\Python\ATH\flask_app_db.db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="flask_app_db [2]" uuid="3d4d3577-1cf0-4c48-9dc0-6bc7cb21fcc4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:D:\Работа\Помойка\python\ATH\flask_app_db.db</jdbc-url>
+    </data-source>
+  </component>
+</project>

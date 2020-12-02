@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Child Title
+{% endblock %}
+
+{% block nav %}
+    {{ super() }} {# referring to the content in the parent templates #}
+    <li><a href="/contact">Contact</a></li>
+    <li><a href="/career">Career</a></li>
+{% endblock %}
+
+{% block content %}
+    {% for bookmark in bookmarks %}
+        <p>{{ bookmark.title }}</p>
+    {% endfor %}
+{% endblock %}

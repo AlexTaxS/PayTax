@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+ 
+{% block body %}
+{{ super() }}
+Содержимое главной страницы
+<p><a href="{{url_for('download_fileenvd')}}">Скачать пояснения</a></p>
+<br>
+<p><a href="{{url_for('begin')}}">Пройти опрос</a></p>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<p>Заполните форму для анализа:</p>
+<tr><td>Код оквэд:</td><td><input name='activity' type='TEXT' value='{{ the_activity }}'></td></tr>
+<tr><td>Место деятельности:</td><td><input name='region' type='TEXT' width='60'></td></tr>
+<tr><td>Объем выручки в год:</td><td><input name='revenue' type='TEXT' width='60'></td></tr>
+<tr><td>Будуд или есть работники? (1-да/0-нет):</td><td><input name='staff' type='TEXT' value='1/0'></td></tr>
+<tr><td>Число работников:</td><td><input name='num_empl' type='TEXT' width='60'></td></tr>
+<tr><td>Величина расходов больше 60% (1-да/0-нет):</td><td><input name='amount_exp' type='TEXT' value='1/0'></td></tr>
+<tr><td>Имеете ли вы статус адвоката или нотариуса? (1-да/0-нет):</td><td><input name='advocate' type='TEXT' value='1/0'></td></tr>
+<tr><td>Будете работать по Договору простого товарищества? (1-да/0-нет):</td><td><input name='contr_partn' type='TEXT' value='1/0'></td></tr>
+</table>
+<p>Нажмите ПОИСК, чтобы продолжить:</p>
+<p><input value='Поиск' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

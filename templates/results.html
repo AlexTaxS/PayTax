@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>Вы представили следующие параметры:</p>
+<table>
+<tr><td>Выбранные коды оквэд:</td><td>{{ the_activity }}</td></tr>
+<tr><td>Место деятельности:</td><td>{{ the_region }}</td></tr>
+<tr><td>Объем выручки в год:</td><td>{{ the_revenue }}</td></tr>
+<tr><td>Наличие работников:</td><td>{{ the_staff }}</td></tr>
+<tr><td>Число работников:</td><td>{{ the_num_empl }}</td></tr>
+<tr><td>Величина расходов больше 60%:</td><td>{{ the_amount_exp }}</td></tr>
+<tr><td>Статус адвоката или нотариуса:</td><td>{{ the_advocate }}</td></tr>
+<tr><td>Договору простого товарищества:</td><td>{{ the_contr_partn }}</td></tr>
+</table>
+
+<p>Согласно вашим параметрам Вам подходит:</p>
+<h3>{{ the_results }}</h3>
+
+
+
+{% endblock %}
